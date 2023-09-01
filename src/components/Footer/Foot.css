@@ -7,7 +7,7 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #f1faee;
+    background-color: #D1C8B7;
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
   }
 
@@ -15,19 +15,6 @@ footer {
     font-size: 2.5rem;
 }
 
-#twitterIcon {
-  position: relative;
-  top: 5px;
-  font-size: 2.5rem;
-}
-
-.github-icon {
-  color: black;
-}
-
-.instagram-icon {
-  color: #b31c28;
-}
 
   footer p {
     color: #457b9d;

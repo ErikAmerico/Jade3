@@ -8,7 +8,7 @@ export default function Footer() {
             <div className="social-icons">
                 <a href="https://www.facebook.com/jade3amesbury3" target="_blank" rel="noopener noreferrer">
                     <IconContext.Provider value={{ className: 'icon' }}>
-                    <FaFacebook />
+                    <FaFacebook style={{ color: '#3b5998' }} />
                     </IconContext.Provider>
                 </a>
             </div>
