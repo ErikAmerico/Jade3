@@ -14,16 +14,22 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 // import { Container, Row, Col } from 'react-bootstrap';
 // import MenuItems from './MenuItems'; // Import your menu items component
 // import ContactForm from './ContactForm'; // Import your contact form component
-import Home from './components/Home';
+import Home from './components/Home/Home';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 import './App.css';
 
 function App() {
   return (
+    <>
+    <Header />
     <ParallaxProvider>
       <div className="App">
         <Home />
       </div>
     </ParallaxProvider>
+    <Footer />
+    </>
   );
 }
 
