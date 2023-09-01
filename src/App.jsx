@@ -16,13 +16,17 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 // import ContactForm from './ContactForm'; // Import your contact form component
 import Home from './components/Home/Home';
 import Header from './components/Header/Header';
+import Subheader from './components/Subheader/Subheader';
 import Footer from './components/Footer/Footer';
 import './App.css';
 
 function App() {
   return (
     <>
+    <div className="headerContainer">
     <Header />
+    <Subheader />
+    </div>
     <ParallaxProvider>
       <div className="App">
         <Home />

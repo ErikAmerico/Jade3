@@ -1,9 +1,24 @@
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.header, #root, footer {
+  min-width: 100vh;
+}
+
 .App {
   text-align: center;
 }
 
 .parallax-section {
   min-height: 500px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;

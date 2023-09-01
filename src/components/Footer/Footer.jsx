@@ -5,12 +5,8 @@ import { IconContext } from 'react-icons';
 export default function Footer() {
     return (
         <footer>
-            <div className="social-icons">
-                <a href="https://www.facebook.com/jade3amesbury3" target="_blank" rel="noopener noreferrer">
-                    <IconContext.Provider value={{ className: 'icon' }}>
-                    <FaFacebook style={{ color: '#3b5998' }} />
-                    </IconContext.Provider>
-                </a>
+            <div className="">
+                <p>2023 Jade 3 | Developed by Erik Olson</p>
             </div>
         </footer>
     );
