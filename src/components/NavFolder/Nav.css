@@ -3,10 +3,22 @@
   background-color: #f1faee;
 } */
 
+#NavigationContainer{
+  width: 100%;
+  height: 45px;
+  position: fixed;
+  top: 78px;
+  z-index: 99;
+  border-bottom: black 1px solid;
+  box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, .5);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+
 .navbar {
   width: 100%;
 }
-
 
 .nav-link {
   /* color: #457b9d; */

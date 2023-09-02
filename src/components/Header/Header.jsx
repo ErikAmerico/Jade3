@@ -1,11 +1,9 @@
 
 
-import { useState } from 'react';
 import { FaFacebook } from 'react-icons/fa';
 import { IconContext } from 'react-icons';
 import { Container, Row, Col } from 'react-bootstrap';
 
-import Subheader from '../Subheader/Subheader';
 import Navigation from '../NavFolder/Navigation';
 import './Head.css';
 
@@ -16,7 +14,7 @@ export default function Header() {
   return (
     <>
       <header className="header">
-        <Container fluid> {/* Use fluid container to take full width */}
+        <Container fluid>
           <Row className="align-items-center">
             <Col xs={12} md={4}>
               <div className="header-title">
@@ -46,7 +44,7 @@ export default function Header() {
           </Row>
         </Container>
       </header>
-      <Subheader />
+      <Navigation />
     </>
   );
 }

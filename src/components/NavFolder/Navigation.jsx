@@ -13,7 +13,7 @@ function Navigation() {
   };
 
   return (
-    <Navbar expand="md" variant="light" bg="light" className='nav nav-tabs navbar' expanded={expanded}>
+    <Navbar expand="md" variant="light" bg="light" className='nav nav-tabs navbar' expanded={expanded} id='NavigationContainer'>
       <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setExpanded(!expanded)}/>
       <Navbar.Collapse id="basic-navbar-nav" >
         <Nav className="mr-auto justify-content-between" onClick={handleSelect}>
