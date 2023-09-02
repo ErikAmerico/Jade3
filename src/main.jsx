@@ -12,14 +12,6 @@ import Gallery from './pages/Gallery/Gallery.jsx'
 import Contact from './pages/Contact/Contact.jsx'
 
 
-
-// ReactDOM.createRoot(document.getElementById('root')).render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>,
-// )
-
-
 const router = createBrowserRouter([
   {
     path: '/',

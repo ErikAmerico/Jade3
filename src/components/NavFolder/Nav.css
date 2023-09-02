@@ -1,9 +1,9 @@
-/* 
-.navbar {
-  background-color: #f1faee;
-} */
+
 
 #NavigationContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   height: 45px;
   position: fixed;
@@ -15,19 +15,12 @@
   border-bottom-right-radius: 8px;
 }
 
-
-.navbar {
-  width: 100%;
-}
-
 .nav-link {
-  /* color: #457b9d; */
   color: #D83731;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .nav-link:hover {
-  /* color: #457b9d; */
   color: #D1C8B7;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }

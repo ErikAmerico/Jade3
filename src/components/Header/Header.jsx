@@ -28,7 +28,7 @@ export default function Header() {
                 </a>
               </div>
             </Col>
-            <Col xs={12} md={4} className="text-center">
+            <Col xs={12} md={4} className="text-center d-flex justify-content-end">
               <div className="social-icons">
                 <a
                   href="https://www.facebook.com/jade3amesbury3"
