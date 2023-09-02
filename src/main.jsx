@@ -1,7 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
+import App from './App'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+
+import Home from './components/Home/Home'
+import WhoWeAre from './pages/WhoWeAre/WhoWeAre'
+import Menu from './pages/Menu/Menu'
+import Gallery from './pages/Gallery/Gallery'
+import Contact from './pages/Contact/Contact'
+
+
 
 // ReactDOM.createRoot(document.getElementById('root')).render(
 //   <React.StrictMode>
@@ -31,6 +39,10 @@ const router = createBrowserRouter([
       {
         path: '/Gallery',
         element: <Gallery />,
+      },
+      {
+        path: '/Contact',
+        element: <Contact />,
       },
     ],
   },
