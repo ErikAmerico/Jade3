@@ -10,15 +10,17 @@
 
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { ParallaxProvider } from 'react-scroll-parallax';
+
 // import { Parallax } from 'react-scroll-parallax';
 // import { Container, Row, Col } from 'react-bootstrap';
 // import MenuItems from './MenuItems'; // Import your menu items component
 // import ContactForm from './ContactForm'; // Import your contact form component
-import Home from './components/Home/Home';
+
+//import Home from './components/Home/Home';
 import Header from './components/Header/Header';
 import Subheader from './components/Subheader/Subheader';
 import Footer from './components/Footer/Footer';
-import './App.css';
+import { Outlet } from 'react-router-dom';
 
 function App() {
   return (
@@ -29,7 +31,7 @@ function App() {
     </div>
     <ParallaxProvider>
       <div className="App">
-        <Home />
+        <Outlet />
       </div>
     </ParallaxProvider>
     <Footer />

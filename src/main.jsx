@@ -2,12 +2,14 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+// import './index.css';
 
-// ReactDOM.createRoot(document.getElementById('root')).render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>,
-// )
+
+import Home from './components/Home/Home';
+import WhoWeAre from './pages/WhoWeAre/WhoWeAre';
+import Menu from './pages/Menu/Menu';
+import Gallery from './pages/Gallery/Gallery';
+import Contact from './pages/Contact/Contact';
 
 
 const router = createBrowserRouter([
@@ -31,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: '/Gallery',
         element: <Gallery />,
+      },
+      {
+        path: '/Contact',
+        element: <Contact />,
       },
     ],
   },
