@@ -7,13 +7,16 @@
   width: 100%;
 }
 
+
 .nav-link {
-  color: #457b9d;
+  /* color: #457b9d; */
+  color: #D83731;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .nav-link:hover {
-  color: #457b9d;
+  /* color: #457b9d; */
+  color: #D1C8B7;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -23,7 +26,7 @@
 }
 
 .nav-link-text:hover {
-  text-shadow: 2px 2px 4px #f1faee;
+  text-shadow: 2px 2px 4px #f1faee;;
   display: inline-block;
   animation: navPulse 1.5s linear infinite;
 }

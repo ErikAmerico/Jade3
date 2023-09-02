@@ -1,13 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 
-import Home from './components/Home/Home'
-import WhoWeAre from './pages/WhoWeAre/WhoWeAre'
-import Menu from './pages/Menu/Menu'
-import Gallery from './pages/Gallery/Gallery'
-import Contact from './pages/Contact/Contact'
+import App from './App'
+import Home from './components/Home/Home.jsx'
+import WhoWeAre from './pages/WhoWeAre/WhoWeAre.jsx'
+import Menu from './pages/Menu/Menu.jsx'
+import Gallery from './pages/Gallery/Gallery.jsx'
+import Contact from './pages/Contact/Contact.jsx'
 
 
 

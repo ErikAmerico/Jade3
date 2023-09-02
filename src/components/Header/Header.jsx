@@ -1,45 +1,52 @@
 
+
 import { useState } from 'react';
-//import Navigation from '../NavFolder/Navigation';
 import { FaFacebook } from 'react-icons/fa';
 import { IconContext } from 'react-icons';
+import { Container, Row, Col } from 'react-bootstrap';
 
-//import Subheader from '../Subheader/Subheader'
+import Subheader from '../Subheader/Subheader';
+import Navigation from '../NavFolder/Navigation';
 import './Head.css';
 
+const logo = <img src="/images/jadeLogo.png" alt="" id="headerLogo" />;
 
-const logo = <img src="/images/jadeLogo.png" alt="" id='headerLogo' />
-const initialName = logo;
-const reversedName = 'Jade 3';
-
-// eslint-disable-next-line react/prop-types
 export default function Header() {
-  const [name, setName] = useState(initialName);
-  
-
-  const handleClick = () => {
-    setName(name === initialName ? reversedName : initialName);
-  };
 
   return (
     <>
-    <header className='header'>
-      <h1 className='header-title' onClick={handleClick}>{name}</h1>
-      {/* <Navigation /> */}
-      <div>
+      <header className="header">
+        <Container fluid> {/* Use fluid container to take full width */}
+          <Row className="align-items-center">
+            <Col xs={12} md={4}>
+              <div className="header-title">
+                {logo}
+              </div>
+            </Col>
+            <Col xs={12} md={4} className="text-center">
+              <div>
                 <a href="http://www.enjoymenus.com/ViewMenus.aspx?RestaurantID=e36cd478-865a-439c-a3f5-c96d71bd387b">
-                    <img src="/images/orderOnline.png" alt="" id='orderOnline'/>
+                  <img src="/images/orderOnline.png" alt="" id="orderOnline" />
                 </a>
-      </div>
-      <div className="social-icons">
-                <a href="https://www.facebook.com/jade3amesbury3" target="_blank" rel="noopener noreferrer">
-                    <IconContext.Provider value={{ className: 'icon' }}>
+              </div>
+            </Col>
+            <Col xs={12} md={4} className="text-center">
+              <div className="social-icons">
+                <a
+                  href="https://www.facebook.com/jade3amesbury3"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <IconContext.Provider value={{ className: 'icon' }}>
                     <FaFacebook style={{ color: '#3b5998' }} />
-                    </IconContext.Provider>
+                  </IconContext.Provider>
                 </a>
-      </div>
-    </header>
-    {/* <Subheader /> */}
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </header>
+      <Subheader />
     </>
-  )
+  );
 }
