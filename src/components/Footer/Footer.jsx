@@ -20,7 +20,9 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <p xs={6}>Developed by Erik Olson</p>
+        <a href="https://eriksportoflio.netlify.app/" target="_blank" rel="noopener noreferrer" id='erikfooterlink'>
+          <p xs={6}>Developed by Erik Olson</p>
+        </a>
         <div className="social-icons" xs={6} id='facebook-columnFooter'>
           <a
             href="https://www.facebook.com/jade3amesbury3"
