@@ -1,5 +1,6 @@
 import { Parallax } from 'react-scroll-parallax';
 import { Container, Row, Col } from 'react-bootstrap';
+import './Home.css';
 
 export default function Home() {
     return (
@@ -36,6 +37,16 @@ export default function Home() {
             <p>contact info</p>
           </div>
         </Parallax>
+
+        <Parallax className="parallax-section" y={[20, -20]} tagouter="figure">
+          <div className="parallax-content">
+          <div class="elfsight-app-72653ebf-0af8-4da1-bc2e-f0bbdb08275a" id='reviews'></div>
+          </div>
+        </Parallax>
+
+        
+
+
       </div>
     );
   }
