@@ -20,8 +20,8 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <p xs={4}>2023 Jade 3 | Developed by Erik Olson</p>
-        <div className="social-icons" xs={4}>
+        <p xs={6}>Developed by Erik Olson</p>
+        <div className="social-icons" xs={6} id='facebook-columnFooter'>
           <a
             href="https://www.facebook.com/jade3amesbury3"
             target="_blank"

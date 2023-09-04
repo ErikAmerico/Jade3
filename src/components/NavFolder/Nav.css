@@ -1,19 +1,23 @@
 
 
-#NavigationContainer{
+#NavigationContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 45px;
   position: fixed;
-  top: 78px;
+  /* top: 0; */
+  /* top: 78px; */
+  top: 75px;
+  left: 0; /* Adjusted to the top left corner for mobile */
   z-index: 99;
   border-bottom: black 1px solid;
-  box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, .5);
+  box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.5);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
 }
+
 
 .nav-link {
   color: #D83731;
@@ -40,15 +44,58 @@
   animation: none;
 }
 
-.navbar-collapse {
+/* .navbar-collapse {
   max-height: calc(100vh - 78px);
   transition: max-height 0.3s ease-in-out;
+}
+
+.navbar-collapse.show {
+  top: calc(70px - 27px);
+} */
+
+/* Set initial position of the dropdown menu */
+.navbar-collapse {
+  top: 70px; /* Initial position, same as your media query */
+  transition: top 0.3s ease-in-out; /* Add a transition for smooth movement */
+}
+
+/* Adjust the top position of the dropdown menu when open */
+.navbar-collapse.show {
+  top: 43px; /* Final position, adjust as needed */
+}
+
+
+/* Remove the border around the burger icon */
+.navbar-toggler {
+  border: none;
+}
+
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
+
+@media (max-width: 768px) {
+  #NavigationContainer {
+    top: 70px; /* Adjusted to clear the header */
+  }
 }
 
 @media (max-width: 768px) {
   .navbar-collapse {
     position: absolute;
     top: 78px;
+    background-color: #D1C8B7;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 1px 4px 5px 3px rgba(0, 0, 0, 0.5);
+    z-index: 97;
+    
   }
 }
 
