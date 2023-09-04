@@ -22,7 +22,9 @@
     color: #457b9d;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     position: relative;
-    cursor: pointer;
+    left: -100px;
+    /* cursor: pointer; */
+    /**/
   }
 
   #headerLogo {
@@ -41,6 +43,9 @@
 
 #orderOnline{
   height: 2.5rem;
+  margin: 0 auto;
+  position: relative;
+  left: 8px;
 }
 
 
@@ -49,8 +54,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 10rem;
-  margin-right: 1rem;
+  /* width: 10rem;
+  margin-right: 1rem; */
+  max-width: 250px;
 }
   
 
@@ -83,6 +89,60 @@
     }
   }
 
+  @media screen and (min-width: 768px) {
+    .header-title{
+      margin-left: -300px;
+    }
+  }
 
+  /* ipad air */
+  @media screen and (min-width: 820px) {
+    .header-title{
+      margin-left: -125px;
+    }
+  }
+
+  /* ipad mini */
+  @media screen and (min-width: 768px) {
+    .header-title{
+      margin-left: 75px;
+    }
+  }
+
+/* surface duo */
+@media screen and (min-width: 540px) {
+  .header-title{
+    margin-left: 75px;
+  }
+}
+
+/* galaxy fold */
+@media screen and (min-width: 280px) {
+  .header-title{
+    margin-left: 75px;
+  }
+  #orderOnline{
+    left: 0px;
+  }
+} 
+
+/* samsung galaxy a51/71 */
+@media screen and (min-width: 360px) {
+  .header-title{
+    margin-left: 75px;
+  }
+  #orderOnline{
+    left: 30px;
+  }
+}
   
+/* nest hub */
+@media screen and (min-width: 480px) {
+  .header-title{
+    margin-left: 25px;
+  }
+  #orderOnline{
+    left: 12px;
+  }
+}
   
