@@ -16,19 +16,19 @@ export default function Header() {
       <header className="header">
         <Container fluid>
           <Row className="align-items-center">
-            <Col xs={12} md={4}>
+            <Col xs={6} md={4}>
               <div className="header-title">
                 {logo}
               </div>
             </Col>
-            <Col xs={12} md={4} className="text-center">
+            <Col xs={6} md={4} className="text-center">
               <div>
                 <a href="http://www.enjoymenus.com/ViewMenus.aspx?RestaurantID=e36cd478-865a-439c-a3f5-c96d71bd387b">
                   <img src="/images/orderOnline.png" alt="" id="orderOnline" />
                 </a>
               </div>
             </Col>
-            <Col xs={12} md={4} className="text-center d-flex justify-content-end">
+            <Col xs={12} md={4} className="text-center d-flex justify-content-end d-none">
               <div className="social-icons">
                 <a
                   href="https://www.facebook.com/jade3amesbury3"
