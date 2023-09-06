@@ -1,7 +1,8 @@
 #root {
-  max-width: 1280px;
+  /* max-width: 1280px; */
+  width: 100%;
   margin: 0 auto;
-  padding: 2rem;
+  /* padding: 2rem; */
   text-align: center;
 }
 
@@ -44,20 +45,8 @@
 
 .App {
   text-align: center;
-}
+} 
 
-.parallax-section {
-  min-height: 500px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #f0f0f0;
-  color: #333;
-}
 
-.parallax-content {
-  padding: 40px;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 10px;
-}
+
+
