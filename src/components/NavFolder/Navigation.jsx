@@ -4,6 +4,9 @@ import { Link, useLocation } from 'react-router-dom';
 import { Navbar, Nav } from 'react-bootstrap';
 import './Nav.css';
 
+import { FaFacebook } from 'react-icons/fa';
+import { IconContext } from 'react-icons';
+
 function Navigation() {
   const currentPage = useLocation().pathname;
   const [expanded, setExpanded] = useState(false);
@@ -80,6 +83,19 @@ function Navigation() {
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>
+
+      <div className="social-icons" xs={6} id='facebook-columnNav'>
+          <a
+            href="https://www.facebook.com/jade3amesbury3"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <IconContext.Provider value={{ className: 'icon' }}>
+              <FaFacebook style={{ color: '#3b5998' }} />
+            </IconContext.Provider>
+          </a>
+        </div>
+
     </Navbar>
   );
 }

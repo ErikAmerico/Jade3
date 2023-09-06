@@ -78,6 +78,15 @@
     box-shadow: none;
 }
 
+#facebook-columnNav {
+  width: 30%;
+  height: 30%;
+}
+
+#facebook-columnNav .icon {
+  font-size: 35px;
+}
+
 
 
 @media (max-width: 768px) {

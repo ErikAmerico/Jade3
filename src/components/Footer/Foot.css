@@ -19,9 +19,19 @@
     width: 100%;
     background-color: #D1C8B7;
     box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.1); /* Negative value for the shadow to appear at the top */
-    position: fixed; /* Fixed positioning to stick at the bottom */
+    position: relative; /* Fixed positioning to stick at the bottom */
     bottom: 0;
     left: 0;
+  }
+
+  .footer-top {
+    background-color: #3e110e;
+    color: rgba(255, 255, 255, 0.551);
+    border-radius: 10px;
+  }
+
+  ul {
+    list-style: none;
   }
   
   .footer-content {
@@ -30,10 +40,10 @@
     align-items: center;
   }
   
-  .social-icons {
+  /* .social-icons {
     display: flex;
     align-items: center;
-  }
+  } */
 
   #erikfooterlink {
     color: black;
