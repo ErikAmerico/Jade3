@@ -40,7 +40,7 @@ export default function Home() {
 
         <Parallax className="parallax-section" y={[20, -20]} tagouter="figure">
           <div className="parallax-content">
-          <div class="elfsight-app-72653ebf-0af8-4da1-bc2e-f0bbdb08275a" id='reviews'></div>
+          <div className="elfsight-app-72653ebf-0af8-4da1-bc2e-f0bbdb08275a" id='reviews'></div>
           </div>
         </Parallax>
 
