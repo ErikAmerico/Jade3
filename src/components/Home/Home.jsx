@@ -12,8 +12,8 @@ export default function Home() {
           </div>
         </Parallax>
 
-        <div className="welcomeparallax">
-        </div>
+        <div className="welcomeparallax"></div>
+        
   
         <Parallax className="parallax-section" y={[40, -40]} tagouter="figure">
           <div className="parallax-content container-fluid">
