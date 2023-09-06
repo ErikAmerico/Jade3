@@ -22,14 +22,6 @@ export default function Home() {
                   <p>the menu</p>
           </div>
         </Parallax>
-  
-        <Parallax className="parallax-section" y={[20, -20]} tagouter="figure">
-          <div className="parallax-content container-fluid">
-            <h2>Contact Us</h2>
-            {/* <ContactForm /> */}
-            <p>contact info</p>
-          </div>
-        </Parallax>
 
         <Parallax className="parallax-section" y={[20, -20]} tagouter="figure">
           <div className="parallax-content container-fluid">
