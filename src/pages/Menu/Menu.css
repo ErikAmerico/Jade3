@@ -1,5 +1,12 @@
-
-/* #menuParallaxSection {
+.menu-container {
     position: relative;
-    top: 150px;
-} */
+    top: 75px;
+}
+
+.carousel-button {
+    position: relative;
+    top: 50px;
+    right: 25px;
+    height: 600px;
+    background-color: #72091A;
+}
