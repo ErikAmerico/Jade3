@@ -10,6 +10,7 @@ import { IconContext } from 'react-icons';
 function Navigation() {
   const currentPage = useLocation().pathname;
   const [expanded, setExpanded] = useState(false);
+  const [pageTitle, setPageTitle] = useState('');
   const navRef = useRef(null);
 
   const handleSelect = () => {
@@ -28,10 +29,34 @@ function Navigation() {
 
   useEffect(() => {
     document.addEventListener('click', handleClickOutside);
+  
+    // Set the page title based on the current page
+    switch (currentPage) {
+      case '/':
+        setPageTitle('Home');
+        break;
+      case '/WhoWeAre':
+        setPageTitle('Who We Are');
+        break;
+      case '/Menu':
+        setPageTitle('Menu');
+        break;
+      case '/Gallery':
+        setPageTitle('Gallery');
+        break;
+      case '/Contact':
+        setPageTitle('Contact');
+        break;
+      default:
+        setPageTitle('');
+        break;
+    }
+  
     return () => {
       document.removeEventListener('click', handleClickOutside);
     };
-  }, []);
+  }, [currentPage]);
+  
 
   return (
     <Navbar expand="md" variant="light" bg="light" className='nav nav-tabs navbar' expanded={expanded} id='NavigationContainer'>
@@ -83,6 +108,10 @@ function Navigation() {
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>
+
+      <div id="page-title">
+        {pageTitle}
+      </div>
 
       <div className="social-icons" xs={6} id='facebook-columnNav'>
           <a

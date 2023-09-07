@@ -91,6 +91,9 @@
   font-size: 35px;
 }
 
+#page-title {
+  display: none;
+}
 
 
 @media (max-width: 768px) {
@@ -110,6 +113,9 @@
     z-index: 97;
   }
   #facebook-columnNav {
+    display: flex;
+  }
+  #page-title {
     display: flex;
   }
 }
