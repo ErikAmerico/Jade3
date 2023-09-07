@@ -17,9 +17,9 @@ export default function Menu() {
     setCurrentSlide((prevSlide) => (prevSlide + 1) % 2);
   };
 
-  const goPrev = () => {
-    setCurrentSlide((prevSlide) => (prevSlide - 1 + 2) % 2);
-  };
+  // const goPrev = () => {
+  //   setCurrentSlide((prevSlide) => (prevSlide - 1 + 2) % 2);
+  // };
 
 
   return (
@@ -36,10 +36,10 @@ export default function Menu() {
               className='carousel'
               onChange={handleChange}
               >
-                <div id='carouselImage1'>
+                <div id='carouselImage1' style={{ transform: `rotateY(${currentSlide * -180}deg)` }}>
                   <img src="/images/menu1.jpeg" alt="menu1" className='carouselmenuimage'/>
                 </div>
-                <div id='carouselImage2'>
+                <div id='carouselImage2' style={{ transform: `rotateY(${currentSlide * -360}deg)` }}>
                   <img src="/images/menu2.jpeg" alt="menu2" className='carouselmenuimage'/>
                 </div>
               </Carousel>
@@ -56,5 +56,4 @@ export default function Menu() {
     </div>
   );
 }
-
 
