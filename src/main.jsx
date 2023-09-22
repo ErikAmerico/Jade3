@@ -5,7 +5,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './index.css';
 
 import App from './App'
-import Home from './components/Home/Home.jsx'
+import Home from './pages/Home/Home.jsx'
 import WhoWeAre from './pages/WhoWeAre/WhoWeAre.jsx'
 import Menu from './pages/Menu/Menu.jsx'
 import Gallery from './pages/Gallery/Gallery.jsx'
