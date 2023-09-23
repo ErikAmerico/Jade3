@@ -32,18 +32,20 @@
   background-size: cover;
 
   border-radius: 10px;
+
+  margin-top: 120px;
 }
 
 .custom-carousel {
-  max-width: 33%;
-  float: left;
+  max-width: 65%;
   position: relative;
-  bottom: 100px;
+  bottom: 50px;
   left: 2%;
-  float: left;
 }
 
 .menu-container {
+  position: relative;
+  bottom: 50px;
   display: flex;
   justify-content: flex-start;
 }
@@ -91,4 +93,6 @@
   border-radius: 10px;
 }
 
-
+.control-dots {
+  display: none;
+}

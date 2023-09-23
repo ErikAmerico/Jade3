@@ -1,6 +1,6 @@
 import { Parallax } from 'react-scroll-parallax';
 import { Carousel } from 'react-responsive-carousel';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import './Home.css';
@@ -40,22 +40,25 @@ export default function Home() {
     setCurrentSlide(index);
   };
 
-  const goNext = () => {
-    setCurrentSlide((prevSlide) => (prevSlide + 1) % 2);
-  };
+    useEffect(() => {
+    const prevPageContain = document.getElementById('menuPrevPageContain');
+    const nextPageContain = document.getElementById('menuNextPageContain');
+
+    if (currentSlide === 0) {
+      if (prevPageContain) prevPageContain.style.display = 'none';
+      if (nextPageContain) nextPageContain.style.display = 'block';
+    } else {
+      if (prevPageContain) prevPageContain.style.display = 'block';
+      if (nextPageContain) nextPageContain.style.display = 'none';
+    }
+  }, [currentSlide]);
 
     return (
       <div>
-        <Parallax className="parallax-section" y={[-20, 20]} tagouter="figure">
-          <div className="parallax-content container-fluid">
-            <h1>Welcome to Our Restaurant</h1>
-            <p>Delicious Food &amp; Great Ambience</p>
-          </div>
-        </Parallax>
 
         <div className="welcomeparallax"></div>
         
-  
+      <Col md={5} sm={12} className='menu-section'>
         <Container fluid className="menu-container mt-5 mb-5">
           <Row className="justify-content-left">
             <Carousel
@@ -85,7 +88,8 @@ export default function Home() {
               
               </Carousel>
           </Row>
-        </Container>
+          </Container>
+        </Col>
 
 
         <Parallax className="parallax-section" y={[20, -20]} tagouter="figure">
