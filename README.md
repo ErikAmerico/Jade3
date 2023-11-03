@@ -13,13 +13,13 @@ This project is proudly a work in progress.
   ![Current Top](assets/currentJade3Top.png)
 
 - This is how I would have designed the website with my skills at the time.
-  ![My Top](assets/MyJade3Top.png)
+  ![My Top](assets/myJade3Top.png)
 
 - The current footer of Jade3.
   ![Current Footer](assets/currentJade3Bottom.png)
 
 - How I would have designed the footer.
-  ![My Footer](assets/MyJade3Bottom.png)
+  ![My Footer](assets/myJade3Bottom.png)
 
 ## Next Up Implementations
 
