@@ -25,5 +25,3 @@ This project is proudly a work in progress.
 
 - Next to the carousel menu on the home page, I need to come up with more information to display.
 - Implement Stripe
-
-## The UX/UI design is currently in placeholder status, once the site is functional, a design overhaul will take place.
